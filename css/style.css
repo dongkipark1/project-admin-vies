@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@400;500;600;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: 'Pretendard', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+section {
+    min-height: 100vh;
+    display: flex;
+}
+
+aside {
+    width: 300px;
+    background-color: #343a40;
+    color: #fff;
+}
+
+.content-page {
+    width: calc(100% - 300px);
+}
+
+main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.side-bar .header figure img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.side-bar .header span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.side-bar .info {
+    padding: 20px;
+    border-bottom: 1px solid #444;
+}
+
+.side-bar .info p {
+    margin-bottom: 10px;
+}
+
+.side-bar .info a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f45858;
+    color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.side-menu {
+    border-bottom: 1px solid #444;
+}
+
+.side-menu p {
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+}
+
+.side-menu ul {
+    display: none;
+}
+
+.side-menu.active ul {
+    display: block;
+}
+
+.side-menu ul li {
+    padding: 10px 20px;
+}
+
+.side-menu ul li.on {
+    background-color: #f45858;
+}
+
+.side-menu ul li a {
+    display: block;
+    color: #fff;
+}
+
+.tab-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.tab-nav li {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.tab-nav li.current a {
+    border-bottom: 3px solid #f45858;
+    color: #f45858;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.current {
+    display: block;
+}
+
+.tab-head p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tab-item {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search-box .search-left {
+    font-size: 1rem;
+}
+
+.search-box .search-right {
+    display: flex;
+}
+
+.search-box .tab-input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.search-box .tab-input-wrapper input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.search-box .tab-input-wrapper .submit-btn {
+    background-color: #f45858;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.tab-item table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tab-item table th, .tab-item table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tab-item table th {
+    background-color: #f8f8f8;
+}
+
+.tab-item table .title {
+    text-align: left;
+}
+
+.tab-item table .state {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.tab-item table .state.approval {
+    background-color: #03cf5d;
+}
+
+.tab-item table .state.wait {
+    background-color: #f45858;
+}
+
+.tab-item table .detail {
+    cursor: pointer;
+    color: #f45858;
+    text-decoration: underline;
+}
+
+.faq-button-wrapper {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.faq-button-wrapper a {
+    padding: 10px 20px;
+    background-color: #f45858;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+}
